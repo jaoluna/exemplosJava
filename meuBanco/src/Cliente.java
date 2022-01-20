@@ -3,7 +3,6 @@ public class Cliente {
    private String cpf;
 
 
-
    public String getName() {
       return name;
    }
