@@ -1,11 +1,25 @@
 public class CadastraLivros {
     public static void main(String[] args) {
+        Autor autor = new Autor();
+        autor.setNome("Rodrigo Turini");
+
+        Autor outroAutor = new Autor();
+        outroAutor.setNome("Paulo Silveira");
+
+
+
         //Criando livros
-        Livro livro = new Livro();
-        livro.nome = "Java 8 Prático";
+        Livro livro = new Livro(autor);
+    /*    livro.nome = "Java 8 Prático";
         livro.descricao = "Novos recursos da linguagem";
         livro.valor = 59.90;
-        livro.isbn = "978-85-66250-46-6";
+        livro.isbn = "978-85-66250-46-6";*/
+
+        livro.setNome("Java 8 Prático");
+        livro.setDescricao("Novos recursos da linguagem");
+        livro.setValor(59.9);
+        livro.setIsbn("978-85-66250-46-6");
+
 
         /*
         System.out.println(livro.nome);
@@ -15,11 +29,21 @@ public class CadastraLivros {
 */
 
 
-        Livro outroLivro = new Livro();
-        outroLivro.nome = "Lógica de Programacão";
+        Livro outroLivro = new Livro(outroAutor);
+     /*   outroLivro.nome = "Lógica de Programacão";
         outroLivro.descricao = "Crie seus primeiros programas";
         outroLivro.valor = 59.90;
-        outroLivro.isbn = "978-85-66250-22-0";
+        outroLivro.isbn = "978-85-66250-22-0";*/
+
+        outroLivro.setNome("Lógica de Programacão");
+        outroLivro.setDescricao("Crie seus primeiros programas");
+        outroLivro.setValor(59.9);
+        outroLivro.setIsbn("978-85-66250-22-0");
+
+
+
+
+
 /*
         System.out.println(outroLivro.nome);
         System.out.println(outroLivro.descricao);
@@ -31,20 +55,46 @@ public class CadastraLivros {
 
         //criando autores;
 
-        Autor autor = new Autor();
-        autor.nome = "Rodrigo Turini";
-        autor.email = "rodrigo.turini@caelum.com.br";
-        autor.cpf = "123.456.789-10";
-        livro.autor = autor;
 
-        Autor outroAutor = new Autor();
-        outroAutor.nome = "Paulo Silveira";
+       /* autor.nome = "Rodrigo Turini";
+        autor.email = "rodrigo.turini@caelum.com.br";
+        autor.cpf = "123.456.789-10";*/
+
+        autor.setEmail("rodrigo.turini@caelum.com.br");
+        autor.setCpf("123.456.789-10");
+
+
+
+
+/*        outroAutor.nome = "Paulo Silveira";
         outroAutor.email = "paulo.silveira@caelum.com.br";
         outroAutor.cpf = "123.456.789-10";
-        outroLivro.autor = outroAutor;
+        outroLivro.setAutor(outroAutor);*/
+
+
+        outroAutor.setEmail("paulo.silveira@caelum.com.br");
+        outroAutor.setCpf("123.456.789-10");
+
+
+
 
         livro.mostrarDetalhes();
         outroLivro.mostrarDetalhes();
+
+
+
+
+        Autor autor1 = new Autor();
+        autor1.setNome("Guilherme Silveira");
+        autor1.setEmail("guilherme.silveira@caelum.com.br");
+        autor1.setCpf("123.456.789-10");
+
+        Livro livro1 = new Livro(autor1);
+        livro1.setNome("Algoritmos em Java");
+        livro1.setDescricao("Ordenacao em Java");
+        livro1.setValor(89.9);
+
+        livro1.mostrarDetalhes();
 
     }
 

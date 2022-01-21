@@ -1,15 +1,15 @@
 public class ComparandoAutores {
     public static void main(String[] args) {
         Autor autor = new Autor();
-        autor.nome = "Rodrigo Turini";
-        autor.email = "rodrigo.turini@caelum.com.br";
-        autor.cpf = "123.456.789-10";
+        autor.setNome("Rodrigo Turini");
+        autor.setEmail("rodrigo.turini@caelum.com.br");
+        autor.setCpf("123.456.789-10");
 
 
         Autor outroAutor = new Autor();
-        outroAutor.nome = "Paulo Silveira";
-        outroAutor.email = "paulo.silveira@caelum.com.br";
-        outroAutor.cpf = "123.456.789-10";
+        outroAutor.setNome("Paulo Silveira");
+        outroAutor.setEmail("paulo.silveira@caelum.com.br");
+        outroAutor.setCpf("123.456.789-10");
 
         if (autor == outroAutor){
             System.out.println("Autores Iguais");

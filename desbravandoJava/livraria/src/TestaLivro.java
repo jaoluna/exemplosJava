@@ -1,6 +1,6 @@
 public class TestaLivro {
     public static void main(String[] args) {
-        Livro livro = new Livro();
+/*        Livro livro = new Livro();
         livro.nome = "Java 8 Prático";
         livro.descricao = "Novos recursos da linguagem";
         livro.valor = 59.90;
@@ -21,6 +21,6 @@ public class TestaLivro {
         System.out.println(outroLivro.nome);
         System.out.println(outroLivro.descricao);
         System.out.println(outroLivro.valor);
-        System.out.println(outroLivro.isbn);
+        System.out.println(outroLivro.isbn);*/
     }
 }
