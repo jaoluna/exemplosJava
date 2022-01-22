@@ -96,6 +96,15 @@ public class CadastraLivros {
 
         livro1.mostrarDetalhes();
 
+
+        Ebook ebook = new Ebook(autor);
+        ebook.setNome("Java 8 Prático");
+        ebook.setDescricao("Novos recursos da linguagem");
+        ebook.setValor(29.9);
+
+
+        ebook.mostrarDetalhes();
+
     }
 
 }
