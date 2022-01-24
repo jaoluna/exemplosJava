@@ -105,6 +105,20 @@ public class CadastraLivros {
 
         ebook.mostrarDetalhes();
 
+
+
+        Autor autor2 = new Autor();
+        autor2.setNome("Bianca Oliveira");
+        autor2.setCpf("123.456.789-10");
+        autor2.setEmail("bianca@usp.br");
+
+
+        Ebook ebook1 = new Ebook(autor2);
+
+
+
+        ebook1.mostrarDetalhes();
+
     }
 
 }
