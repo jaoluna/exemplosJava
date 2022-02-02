@@ -1,7 +1,11 @@
 public class MinhaConta {
     public static void main(String[] args) {
-        Conta conta1 = new Conta();
-        Conta conta2 = new Conta();
+        Cliente cliente = new Cliente();
+        cliente.setName("João");
+
+
+        Conta conta1 = new ContaCorrente(222, 2223, cliente);
+        Conta conta2 = new ContaCorrente(333, 3332, cliente);
 
         conta1.deposit(500);
        // System.out.println(conta1.money);
