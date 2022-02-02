@@ -1,4 +1,4 @@
-public class Ebook extends Livro{
+public class Ebook extends Livro implements Promocional{
 
     private String waterMark;
 
@@ -20,7 +20,9 @@ public class Ebook extends Livro{
         if (porcentagem > 0.15){
             return false;
         }else {
-            super.aplicaDesconto(porcentagem);
+            double desconto = getValor() * porcentagem;
+            setValor(getValor() - desconto);
+            System.out.println("Aplicando desconto no ebook");
             return true;
         }
     }

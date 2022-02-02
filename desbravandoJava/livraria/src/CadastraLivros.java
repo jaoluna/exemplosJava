@@ -9,7 +9,7 @@ public class CadastraLivros {
 
 
         //Criando livros
-        Livro livro = new Livro(autor);
+        Livro livro = new LivroFisico(autor);
     /*    livro.nome = "Java 8 Prático";
         livro.descricao = "Novos recursos da linguagem";
         livro.valor = 59.90;
@@ -29,7 +29,7 @@ public class CadastraLivros {
 */
 
 
-        Livro outroLivro = new Livro(outroAutor);
+        Livro outroLivro = new LivroFisico(outroAutor);
      /*   outroLivro.nome = "Lógica de Programacão";
         outroLivro.descricao = "Crie seus primeiros programas";
         outroLivro.valor = 59.90;
@@ -89,7 +89,7 @@ public class CadastraLivros {
         autor1.setEmail("guilherme.silveira@caelum.com.br");
         autor1.setCpf("123.456.789-10");
 
-        Livro livro1 = new Livro(autor1);
+        Livro livro1 = new LivroFisico(autor1);
         livro1.setNome("Algoritmos em Java");
         livro1.setDescricao("Ordenacao em Java");
         livro1.setValor(89.9);
