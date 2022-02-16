@@ -8,6 +8,7 @@ import br.com.casadocodigo.livraria.produtos.Produto;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.List;
 
 public class RegistroVendas {
     public static void main(String[] args) throws FileNotFoundException {
@@ -29,11 +30,11 @@ public class RegistroVendas {
 
         System.out.println("Total: " + carrinho.getTotal());
 
-        Produto[] produtos = carrinho.getProdutos();
+        List<Produto> produtos = carrinho.getProdutos();
 
-        for(int i = 0; i <= produtos.length; i++){
+        for(int i = 0; i <= produtos.size(); i++){
            try {
-               Produto produto = produtos[i];
+               Produto produto = produtos.get(i);
                if (produto != null) {
                    System.out.println(produto.getValor());
                }
